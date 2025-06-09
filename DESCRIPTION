@@ -3,31 +3,29 @@ Version: 0.57.4
 Date: 2022-05-31
 Title: A Package for Image Analysis of DCE-MRI (S4 Implementation)
 Authors@R: c(person("Brandon", "Whitcher", role = c("aut", "cre"),
-		     email = "bwhitcher@gmail.com"),
-	      person("Volker", "Schmid", role = "aut",
-	        email="volker.schmid@lmu.de"),
-	      person("Andrew", "Thornton", role = "ctb",
-		     email = "zeripath@gmail.com"))
-Depends:
-    R (>= 2.14.0),
-    minpack.lm,
-    oro.nifti (>= 0.5.0)
-Suggests:
+        email = "bwhitcher@gmail.com"), person("Volker", "Schmid", role
+        = "aut", email="volker.schmid@lmu.de"), person("Andrew",
+        "Thornton", role = "ctb", email = "zeripath@gmail.com"))
+Depends: R (>= 2.14.0), minpack.lm, oro.nifti (>= 0.5.0)
+Suggests: 
     bitops,
     splines,
     XML,
     oro.dicom (>= 0.5.0),
-    testthat
-Imports:
-    utils,
-    parallel,
-    methods
-Description: A collection of routines and documentation that allows one to
-    perform voxel-wise quantitative analysis of dynamic contrast-enhanced MRI
-    (DEC-MRI) and diffusion-weighted imaging (DWI) data, with emphasis on
-    oncology applications.
+    testthat,
+    covr
+Imports: utils, parallel, methods
+Description: A collection of routines and documentation that allows one
+        to perform voxel-wise quantitative analysis of dynamic
+        contrast-enhanced MRI (DEC-MRI) and diffusion-weighted imaging
+        (DWI) data, with emphasis on oncology applications.
 License: BSD_3_clause + file LICENSE
 LazyData: true
 LazyDataCompression: gzip
 Encoding: UTF-8
 RoxygenNote: 7.3.2
+Repository: Neuroconductor-Devel
+Remotes: 
+    neuroconductor-devel/oro.nifti@517ce5312094bf1ecee49bd09024769d3e5d2daa,
+    neuroconductor-devel/oro.dicom@00b9b71a5f8100cd39daa99e5e6b58e31ee54849
+biocViews: 
